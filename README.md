@@ -1,2 +1,2 @@
 # JavaScript
- Meus projetos em JavaScript
+ Meus projetos em **Javascript**
