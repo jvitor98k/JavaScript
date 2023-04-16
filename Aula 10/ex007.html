@@ -16,9 +16,16 @@
             margin-top: 20px;
             
         }
+
+        .interface{
+            max-width: 100%;
+            
+            
+        }
     </style>
 </head>
 <body>
+  <div class="interface">
     <h1>Somando Valores</h1>
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
@@ -32,6 +39,7 @@
             var tn1 = window.document.getElementById('txtn1')
             var tn2 = window.document.getElementById('txtn2')
             var res = window.document.getElementById('res')
+            
             var n1 = Number(tn1.value)
             var n2 = Number(tn2.value)
             var s = n1 + n2
@@ -40,6 +48,7 @@
 
         }
     </script>
+ </div>
     
 </body>
 </html>
