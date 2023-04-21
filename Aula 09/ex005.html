@@ -19,6 +19,9 @@
             text-align: center;
             max-width: 100%;
         }
+        img{
+            max-width: 100%;
+        }
     </style>
 </head>
 <body>
@@ -29,6 +32,8 @@
     <div class="teste2">test02</div>
     <div class="teste3">teste03</div>
     <div id="teste4">teste04</div>
+    <img class="img1" src="jhin1234.jpg" alt="">
+    
     
 
     <script>
@@ -37,6 +42,9 @@
         
         var p1 = document.getElementsByTagName('p')[1]
         p1.style.color = 'red'
+
+        var p2 = document.getElementsByTagName('img')[0]
+        p2.style.borderRadius='20px'
         
 
         var ts = document.getElementById('teste1')
@@ -50,6 +58,9 @@
 
         var t4 = document.querySelector('div#teste4')
         t4.style.background='yellow'
+        t4.style.color='red'
+
+
 
         
     </script>
