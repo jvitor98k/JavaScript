@@ -7,45 +7,43 @@
     <title>Eventos DOM</title>
     <style>
         div#area{
-            font: normal 20pt arial;
-            background-color: green;
+            font: normal 20pt Arial;
+            background: green;
             color: white;
-            width: 200px;
             height: 200px;
+            width: 200px;
             line-height: 200px;
             text-align: center;
+            
 
         }
     </style>
 </head>
 <body>
-    <div id="area">
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
         interaja...
     </div>
-
     <script>
-
-        var a = window.document.getElementById('area')
-        a.addEventListener('click', clicar)
-        a.addEventListener('mouseenter', entrar)
-        a.addEventListener('mouseout', sair)
-
+            var t1 = document.getElementById('area')
+            t1.addEventListener('click',clicar)
+            t1.addEventListener('mouseenter',entrar)
+            t1.addEventListener('mouseout',sair)
+            
         function clicar(){
-            a.innerText = 'clicou'
-            a.style.backgroundColor ='red'
+            t1.innerText='clickou!'
+            t1.style.background='red'
         }
 
         function entrar(){
-            a.innerText = 'entrou'
-            a.style.backgroundColor ='green'
+            t1.innerText='entrou'
         }
+
         function sair(){
-            a.innerText = 'saiu'
-            a.style.backgroundColor ='green'
+            t1.innerText='Saiu!'
+            t1.style.background='green'
         }
 
-
+       
     </script>
-    
 </body>
 </html>
